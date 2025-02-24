@@ -1,0 +1,31 @@
+services:
+  php:
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    container_name: php_project
+    volumes:
+      - ./php:/usr/src/app
+      # Persist PHP packages (Composer)
+      - ./php/vendor:/usr/src/app/vendor
+    working_dir: /usr/src/app
+
+  ts:
+    build:
+      context: ./ts
+      dockerfile: Dockerfile
+    container_name: ts_project
+    volumes:
+      - ./ts:/usr/src/app
+      # Persist Node packages (Yarn)
+      - ./ts/node_modules:/usr/src/app/node_modules
+    working_dir: /usr/src/app
+
+  python:
+    build:
+      context: ./python
+      dockerfile: Dockerfile
+    container_name: python_project
+    volumes:
+      - ./python:/usr/src/app
+    working_dir: /usr/src/app
