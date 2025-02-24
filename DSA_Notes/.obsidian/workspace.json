@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "6f375f33d8190b92",
+    "type": "split",
+    "children": [
+      {
+        "id": "907296cb6006de29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0e64a37ad0a25a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sort/Linked List Data Structors.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Linked List Data Structors"
+            }
+          },
+          {
+            "id": "88928470c53d0e52",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sort/Queue.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Queue"
+            }
+          },
+          {
+            "id": "41e6399833fa5b92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sort/Stack.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Stack"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2f45423c694e58fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d0e89e0fa92c1f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5753e13d2f7125d3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "42f5fddaf8381fd3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "735733e9e1139f1b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "83d37d0e285629a5",
+    "type": "split",
+    "children": [
+      {
+        "id": "965b67be9fc3bcd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "494969828ad29179",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Sort/Linked List Data Structors.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Linked List Data Structors"
+            }
+          },
+          {
+            "id": "95a7b9aac7ee82a7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Sort/Linked List Data Structors.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Linked List Data Structors"
+            }
+          },
+          {
+            "id": "26778cfcf983a661",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b80862be3b5922f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Sort/Linked List Data Structors.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Linked List Data Structors"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "41e6399833fa5b92",
+  "lastOpenFiles": [
+    "Sort/Queue.md",
+    "Sort/Linked List Data Structors.md",
+    "Sort/Bubble Sort.md",
+    "Search/The two crystal ball problem.md",
+    "Search/Binary Search.md",
+    "Search/Linear Search.md",
+    "Besics/Array Data Structor.md",
+    "Besics/Big O Time Complexity.md",
+    "Assets/Time Complexity Graphs.png",
+    "Sort/Stack.md",
+    "Assets/queue.png",
+    "Assets/linkedList-insert.png",
+    "Assets/linkedList.png",
+    "The two crystal ball problem.pdf",
+    "Assets/Time Complexity Graph of O(sqrt(N)).png",
+    "Assets/Binary search img2.png",
+    "Assets/The crystal balls.png",
+    "Assets/ArrayStructorTS.png",
+    "Assets/SearchImg1.png",
+    "Assets/binary search img1.png",
+    "Sort",
+    "Big.md",
+    "time complexity.md",
+    "Besics/ArrayDataStructure.ts",
+    "Search",
+    "Besics",
+    "Untitled.canvas",
+    "Assets",
+    "2024-09-14.md"
+  ]
+}
