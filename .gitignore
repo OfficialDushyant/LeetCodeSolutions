@@ -13,6 +13,7 @@ php/.phpunit.cache/
 php/coverage/
 
 */coverage/
+*/.coverage
 */node_modules/
 */vendor/
 

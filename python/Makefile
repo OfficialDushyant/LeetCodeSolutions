@@ -1,10 +1,10 @@
 .PHONY: test coverage lint lint-fix
 
 test:
-	docker compose exec python python -m unittest discover -s specs -p '*_test.py'
+	docker compose exec python python test_runner.py
 
 coverage:
-	docker compose exec python bash -c "coverage run -m unittest discover -s specs -p '*_test.py' && coverage html"
+	docker compose exec python bash -c "coverage run test_runner.py && coverage html"
 
 lint:
 	docker compose exec python bash -c "find . -name '*.py' | xargs pylint --rcfile=.pylintrc"
