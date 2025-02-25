@@ -4,8 +4,9 @@
   "description": "Typescreept Leetcode solutions",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "jest --color",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "lint": "NODE_OPTIONS=\"--no-warnings\" npx eslint --config eslint.config.mjs src specs",

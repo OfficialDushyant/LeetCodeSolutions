@@ -1,20 +1,24 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} **/
-export const preset = 'ts-jest';
-export const testEnvironment = "node";
-export const transform = {
-  '^.+\\.(ts)$': [
-    'ts-jest',
-    {
-      tsconfig: 'tsconfig.json',
-    }
-  ]
+const config = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  transform: {
+    '^.+\\.(ts)$': [
+      'ts-jest',
+      {
+        tsconfig: 'tsconfig.json'
+      }
+    ]
+  },
+  testMatch: ['**/*.test.ts', '**/*.spec.ts'],
+  testPathIgnorePatterns: ['node_modules', 'dist'],
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.ts'],
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'lcov', 'clover'],
+  coveragePathIgnorePatterns: ['node_modules', 'dist'],
+  moduleFileExtensions: ['ts', 'js', 'json'],
+  moduleDirectories: ['node_modules']
 };
-export const testMatch = ['**/*.test.ts', '**/*.spec.ts'];
-export const testPathIgnorePatterns = ['node_modules', 'dist'];
-export const collectCoverage = true;
-export const collectCoverageFrom = ['src/**/*.ts'];
-export const coverageDirectory = 'coverage';
-export const coverageReporters = ['text', 'lcov', 'clover'];
-export const coveragePathIgnorePatterns = ['node_modules', 'dist'];
-export const moduleFileExtensions = ['ts', 'js', 'json'];
-export const moduleDirectories = ['node_modules'];
+
+export default config;
