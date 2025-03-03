@@ -24,7 +24,8 @@ jobs:
         run: vendor/bin/phpunit --colors=always
       - name: Run PHP lint
         working-directory: php
-        run: find . -name "*.php" -exec php -l {} \;
+        run: |
+          find . -path "./vendor" -prune -o -type f -name "*.php" -print | xargs php -l
 
   ts:
     name: TypeScript Tests and Lint
@@ -57,11 +58,11 @@ jobs:
       - name: Install Python dependencies
         working-directory: python
         run: |
-          pip install --upgrade pip pipenv pylint autopep8 coverage colorama
+          pip install --upgrade pip pipenv pylint colorama
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run Python tests
         working-directory: python
-        run: python -m unittest discover -s specs -p '*_test.py'
+        run: python -m unittest discover -s specs -p '*Test.py'
       - name: Run Python lint
         working-directory: python
         run: pylint --rcfile=.pylintrc src specs
