@@ -1,0 +1,67 @@
+name: CI - Tests and Lint
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  php:
+    name: PHP Tests and Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+      - name: Install Composer dependencies
+        working-directory: php
+        run: composer install
+      - name: Run PHP tests
+        working-directory: php
+        run: vendor/bin/phpunit --colors=always
+      - name: Run PHP lint
+        working-directory: php
+        run: find . -name "*.php" -exec php -l {} \;
+
+  ts:
+    name: TypeScript Tests and Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.4.0'
+      - name: Install Yarn dependencies
+        working-directory: ts
+        run: yarn install
+      - name: Run TS tests
+        working-directory: ts
+        run: yarn test
+      - name: Run TS lint
+        working-directory: ts
+        run: yarn lint
+
+  python:
+    name: Python Tests and Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+      - name: Install Python dependencies
+        working-directory: python
+        run: |
+          pip install --upgrade pip pipenv pylint autopep8 coverage colorama
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Run Python tests
+        working-directory: python
+        run: python -m unittest discover -s specs -p '*_test.py'
+      - name: Run Python lint
+        working-directory: python
+        run: pylint --rcfile=.pylintrc src specs
