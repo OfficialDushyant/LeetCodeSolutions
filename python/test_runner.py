@@ -26,7 +26,7 @@ class ColorTextTestRunner(unittest.TextTestRunner):
 
 if __name__ == "__main__":
     loader = unittest.TestLoader()
-    # Discover tests in the 'specs' directory matching '*_test.py'
-    suite = loader.discover("specs", pattern="*_test.py")
+    # Discover tests in the 'specs' directory matching '*Test.py'
+    suite = loader.discover("specs", pattern="*Test.py")
     runner = ColorTextTestRunner(verbosity=2)
     runner.run(suite)

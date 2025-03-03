@@ -41,9 +41,17 @@ export default [
       '@typescript-eslint/naming-convention': [
 				'warn',
 				{
-					selector: 'function',
-					format: ['camelCase'],
+					"selector": 'function',
+					"format": ['camelCase'],
 				},
+        {
+          "selector": "import",
+          "format": ["camelCase", "PascalCase"],
+        },
+        {
+          "selector": "class",
+          "format": ["PascalCase"],
+        },
         {
           "selector": "default",
           "format": ["camelCase"],
