@@ -1,8 +1,8 @@
-"""Two Sum LeetCode problem."""
+"""Array and Hashing related problems."""
 from typing import List
 
 
-class TwoSum:
+class ArrayAndHashing:
     def two_sum(self, nums: List[int], target: int) -> List[int]:
         num_map = {}
 
