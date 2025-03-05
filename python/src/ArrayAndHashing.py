@@ -1,9 +1,7 @@
-"""Array and Hashing related problems."""
 from typing import List
 
 
 class ArrayAndHashing:
-    """Array and Hashing related problems."""
 
     def two_sum(self, nums: List[int], target: int) -> List[int]:
         num_map = {}
