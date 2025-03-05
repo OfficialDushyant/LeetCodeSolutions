@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Sort/Linked List Data Structors.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -49,8 +49,7 @@
               "title": "Binary Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -193,17 +192,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "41e6399833fa5b92",
+  "active": "d0e64a37ad0a25a6",
   "lastOpenFiles": [
-    "Search/Linear Search.md",
-    "Sort/Stack.md",
-    "Besics/Array Data Structor.md",
-    "Besics/Big O Time Complexity.md",
+    "Sort/Bubble Sort.md",
     "Sort/Queue.md",
     "Sort/Linked List Data Structors.md",
-    "Sort/Bubble Sort.md",
-    "Search/The two crystal ball problem.md",
+    "Sort/Stack.md",
     "Search/Binary Search.md",
+    "Search/Linear Search.md",
+    "Besics/Array Data Structor.md",
+    "Besics/Big O Time Complexity.md",
+    "Search/The two crystal ball problem.md",
     "Assets/Time Complexity Graphs.png",
     "Assets/queue.png",
     "Assets/linkedList-insert.png",
