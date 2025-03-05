@@ -20,3 +20,5 @@ php/coverage/
 python/htmlcov/
 
 */*/__pycache__/
+
+*/.obsidian/
